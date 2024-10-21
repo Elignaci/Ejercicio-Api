@@ -52,7 +52,10 @@ const getServicesByid = async (req, res) => {
         });
     }
 }
-
+/**
+ * 
+ * @param {Object} body es un super objeto que se declara mediante una funcion 
+ */
 /* Crear un servicio */
 const createServicio = async (req, res) => {
     try {
