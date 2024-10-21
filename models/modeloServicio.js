@@ -8,15 +8,23 @@ const servicioSchema = new Schema({
         required: true
 
     },
-    disponible: {
-        type: String,
-        required: true
-
-    },
     descripcion: {
         type: String,
         required: true
 
+    },
+    disponible: {
+        type: Boolean,
+        required: true
+
     }
+    /* id: {
+        type: String,
+        required: true
+
+    }, */
+    
+
 })
-module.exports = model('servicios', servicioSchema)
+module.exports = model('servicio', servicioSchema)
+

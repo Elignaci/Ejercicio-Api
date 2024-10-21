@@ -6,7 +6,7 @@ const dbConector = async () => {
 
     try {
         const conexion = await mongoose.connect(process.env.URI_CONNECT)
-        console.log('ESTOY CONECTADO A MONGOOSE')
+        console.log('CONECTADO CON DB')
         return conexion
     } catch (error) {
         console.log(error)
@@ -17,4 +17,6 @@ const dbConector = async () => {
         }
     }
 }
-module.exports={dbConector}
+module.exports={
+    dbConector
+}
